@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SADAG FC 2023</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+  apiKey: "AIzaSyAhEfKu8bD7CdSs3hcuMamcGyYnaTbAWXw",
+  authDomain: "pagina-del-club-sadag-fc.firebaseapp.com",
+  databaseURL: "https://pagina-del-club-sadag-fc-default-rtdb.firebaseio.com",
+  projectId: "pagina-del-club-sadag-fc",
+  storageBucket: "pagina-del-club-sadag-fc.appspot.com",
+  messagingSenderId: "611517830299",
+  appId: "1:611517830299:web:6098ae7b781de6fa77223e"
+};
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      // Database
+      var database = firebase.firestore();
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>SADAG FC 2023</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Equipo</a></li>
+        <li><a href="#">Calendario</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    
+    <section>
+      <h2>Bienvenidos al sitio de mi equipo de fútbol</h2>
+      <p>¡Aquí encontrarás toda la información acerca de nuestro equipo!</p>
+    </section>
+    
+    <footer>
+      <p>&copy; SADAG FC 2023</p>
+    </footer>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
